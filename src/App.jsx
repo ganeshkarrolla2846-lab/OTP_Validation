@@ -12,14 +12,13 @@ function App() {
    {
     if(isNaN(value)) return;
     const newvalue=value.trim();
-    console.log(value);
-    console.log(newvalue);
+    //console.log(value);
+    //console.log(newvalue);
     const newArray=[...inputArr];
     newArray[index]=newvalue.slice(-1);
     setInputArr(newArray);
 
     newvalue && refArr.current[index+1]?.focus();
-
    };
    const handleOnKeyDown = (e,index) => {
       if(!e.target.value && e.key==="Backspace")
