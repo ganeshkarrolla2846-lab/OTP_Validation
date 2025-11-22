@@ -34,7 +34,7 @@ function App() {
         className='inputbox'
         type='text'
         value={input}
-         ref={(input) => (refArr.current[index]=input)}
+        ref={(input) => (refArr.current[index]=input)}
         onChange={(e)=> {handleOnChange(e.target.value,index)}}
         onKeyDown={(e) => {handleOnKeyDown(e,index)}}
       />
